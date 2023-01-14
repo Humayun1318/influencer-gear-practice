@@ -1,0 +1,164 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Common style  */
+body {
+  font-family: "Poppins", sans-serif;
+  /* width: 1440px;
+  height: 3306px; */
+  background: #ffffff;
+  margin-top: 87px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+/* .header {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 87px;
+} */
+/* -----------------------
+ nav styles
+----------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+}
+.nav-list,
+li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* -----------------------------------
+this is banner designing part
+------------------------------------ */
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 133px;
+  margin-top: 54px;
+  margin-right: 12px;
+}
+.banner-section-title {
+  font-weight: 700;
+  font-size: 52px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+.banner-section-des {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+.banner-section-1 button {
+  border: 0;
+  width: 196px;
+  height: 44px;
+  background: #e02c6d;
+  border-radius: 41px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.banner-section-1 button span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+}
+.banner-section-1 .arrow {
+  width: 54px;
+  height: 24px;
+  color: #ffffff;
+}
+
+.banner-section-2 img {
+  width: 475px;
+  height: 470px;
+}
+.banner-section-2 {
+  background-image: url("/images/Circle design.svg");
+  background-repeat: no-repeat;
+}
+/* ----------------------------------
+this is brand logo designing
+------------------------------------------- */
+.brand {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  /* margin-left: 45px; */
+
+  border-radius: 5px;
+  margin-right: 45px;
+  margin-left: 45px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+ 
+}
+.brand-logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 60px;
+  /* align-items: center; */
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 61px;
+  padding-right: 61px;
+  
+}
+.logo img {
+  width: 55.05px;
+  height: 31.06px;
+}
+/*---------------------------------------------------
+ media screen adjust for header section
+ --------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+    width: 100%;
+    
+  }
+  .banner-section-1{
+    text-align: center;
+   
+  }
+  .banner-section-2{
+ 
+  }
+  .brand-logos {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-row-gap: 20px;
+
+    
+  }
+  .brand {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    
+  }
+}
