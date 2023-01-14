@@ -8,12 +8,10 @@
 /* Common style  */
 body {
   font-family: "Poppins", sans-serif;
-  /* width: 1440px;
-  height: 3306px; */
+  width: 1240px;
+  height: 3306px;
   background: #ffffff;
-  margin-top: 87px;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin: 87px 120px;
 }
 /* .header {
   margin-left: 120px;
@@ -92,7 +90,7 @@ this is banner designing part
   height: 470px;
 }
 .banner-section-2 {
-  background-image: url("/images/Circle design.svg");
+  background-image: url("../images/Circle\ design.svg");
   background-repeat: no-repeat;
 }
 /* ----------------------------------
@@ -112,9 +110,7 @@ this is brand logo designing
     to right,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0)
-  );
- 
+    rgba(0, 0, 0, 0.2));
 }
 .brand-logos {
   display: grid;
@@ -125,7 +121,6 @@ this is brand logo designing
   padding-bottom: 36px;
   padding-left: 61px;
   padding-right: 61px;
-  
 }
 .logo img {
   width: 55.05px;
@@ -138,27 +133,21 @@ this is brand logo designing
   .banner {
     flex-direction: column-reverse;
     width: 100%;
-    
   }
-  .banner-section-1{
+  .banner-section-1 {
     text-align: center;
-   
   }
-  .banner-section-2{
- 
+  .banner-section-2 {
   }
   .brand-logos {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-row-gap: 20px;
-
-    
   }
   .brand {
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-left: 0px;
-    
   }
 }
